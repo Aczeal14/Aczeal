@@ -1,42 +1,324 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Sans Pro',sans-serif;
+  color: #fff;
+  background-color: black;
+}
+
+span {
+  color: #3289ff;
+}
+
+.center {
   text-align: center;
+  align-self: center;
+}
+
+/*------ Navigation ------*/
+
+.navbar {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav {
+  display: flex;
+  margin: 20px 50px;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.logo-container {
+  margin-left: 20px;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  font-size: 30px;
+  color: #fff;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-container {
+  display: flex;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.item {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.item:hover {
+  background-color: #3289ff;
+  border-radius: 10px;
+}
+
+.item:active {
+  border-bottom: #333 4px solid;
+}
+
+/*      HOME       */
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/Main-Background.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.home-text {
+ width: 70%;
+ text-align: center;
+ position: relative;
+ top: -10%;
+}
+
+.title {
+ font-size: 60px;
+ font-weight: 900;
+ padding: 20px;
+}
+
+.subprop {
+ padding: 28 48 0 48;
+ font-size: 18px;
+}
+
+.btn {
+  background-color: #3289ff;
+  border: none;
+  outline: none;
+  padding: 1em 4em;
+  font-size: 1em;
+  color: #333;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: .5s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-10px);
+}
+
+.home-links {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  background: #fff;
+  box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.fa-brands {
+  width: 1em;
+  font-size: 3em;
+  text-align: center;
+  color: #333;
+  transition: .4s ease-in-out;
+}
+
+/*     ABOUT     */
+
+.ab-container {
+  background: url(./assets/About-Backgroud.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 5%;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 20%;
+
+}
+
+.sub-title {
+  font-size: 2em;
+}
+
+.text-expo {
+  font-size: 1.2em;
+}
+
+.about-container {
+  display: flex;
+  padding: 10% 5%;
+  justify-content: space-between;
+}
+
+.about-left {
+  width: 40%;
+}
+
+.about-right {
+  width: 40%;
+}
+
+.skill-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background-color: #3289ff;
+  border: none;
+  outline: none;
+  padding: .5em 1em;
+  font-size: 1em;
+  color: #333;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: .6s ease-in-out;
+}
+
+.demi-title {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.btn2 {
+  background-color: #3289ff;
+  border: none;
+  outline: none;
+  padding: 1em 3em;
+  font-size: 1em;
+  color: black;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: .6s ease-in-out;
+}
+
+.btn2:hover, .skill:hover, .skill2:hover, .fa-brands:hover{
+  transform: translateY(-10px);
+}
+
+/*     PROJECTS    */
+
+.pr-container {
+  background: url(./assets/Project-Background.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 5%;
 }
 
 .card {
-  padding: 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  height: 550px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  gap: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.pr-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-img {
+  height: 200px;
+  width: 310px;
+  border-radius: 10px;
+}
+
+.skill2 {
+  background-color: #3289ff;
+  border: none;
+  outline: none;
+  padding: .5em 1em;
+  font-size: 1em;
+  color: #333;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin: 5px;
+  transition: .6s ease-in-out;
+}
+
+
+
+
+
+.bot {
+  background-color: black;
+  color: #fff;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 20px;
+}
+
+.footer-text {
+  width: 40%;
+}
+
+.semi-title {
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+
+.icons {
+  width: 40%;
+}
+
+.icon-container {
+  display: flex;
+  gap: 2em;
+}
+
+.footnote {
+  text-align: center;
+  width: 80%;
 }
