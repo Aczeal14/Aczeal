@@ -10,8 +10,7 @@ html {
 
 body {
   font-family: 'Source Sans Pro',sans-serif;
-  color: #fff;
-  background-color: black;
+  letter-spacing: .3em;
 }
 
 span {
@@ -29,16 +28,19 @@ span {
   display: flex;
   height: 70px;
   align-items: center;
+  justify-content: center;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  background-color: #005582ba;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .nav {
   display: flex;
   margin: 20px 50px;
-  width: 100vw;
+  width: 80%;
   justify-content: space-between;
 }
 
@@ -86,74 +88,50 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(./assets/Main-Background.webp);
-  background-position: center;
-  background-size: cover;
+  background-color: #333;
+  color: #fff;
 }
 
 .home-text {
- width: 70%;
- text-align: center;
- position: relative;
- top: -10%;
+  width: 70%;
+  position: relative;
+  top: -10%;
+  background-color: #005582;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 
 .title {
- font-size: 60px;
- font-weight: 900;
- padding: 20px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 20px;
 }
 
-.subprop {
- padding: 28 48 0 48;
- font-size: 18px;
-}
-
-.btn {
-  background-color: #3289ff;
-  border: none;
-  outline: none;
-  padding: 1em 4em;
-  font-size: 1em;
-  color: #333;
-  letter-spacing: 1px;
-  font-weight: 700;
-  border-radius: 5px;
-  margin-top: 30px;
-  transition: .5s ease-in-out;
-}
-
-.btn:hover {
-  transform: translateY(-10px);
-}
-
-.home-links {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  background: #fff;
-  box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
-  padding: 0.5rem;
+.home-icon {
+  padding: 0 0 0 5em;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   gap: 1em;
 }
 
-.fa-brands {
+.home-icon .fa-brands {
   width: 1em;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
-  color: #333;
+  color: #3289ff;
   transition: .4s ease-in-out;
 }
+
+.subprop {
+  padding: 1em 0 0 4em;
+  font-size: 18px;
+  letter-spacing: .1 em;
+ }
 
 /*     ABOUT     */
 
 .ab-container {
-  background: url(./assets/About-Backgroud.jpeg);
-  background-position: center;
-  background-size: cover;
   height: 100vh;
   padding-top: 5%;
 }
@@ -163,7 +141,7 @@ span {
   flex-direction: column;
   text-align: center;
   padding: 40px 20%;
-
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 
 .sub-title {
@@ -176,7 +154,7 @@ span {
 
 .about-container {
   display: flex;
-  padding: 10% 5%;
+  padding: 5% 5%;
   justify-content: space-between;
 }
 
@@ -190,7 +168,7 @@ span {
 
 .skill-list {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -200,17 +178,20 @@ span {
   outline: none;
   padding: .5em 1em;
   font-size: 1em;
-  color: #333;
+  color: #fff;
   letter-spacing: 1px;
   font-weight: 700;
   border-radius: 5px;
-  margin-top: 30px;
   transition: .6s ease-in-out;
 }
 
 .demi-title {
   font-size: 1.5em;
   font-weight: 900;
+}
+
+.about-right .demi-title {
+  margin-bottom: 1em;
 }
 
 .btn2 {
@@ -234,9 +215,8 @@ span {
 /*     PROJECTS    */
 
 .pr-container {
-  background: url(./assets/Project-Background.jpeg);
-  background-position: center;
-  background-size: cover;
+  background-color: #daf8e3;
+  color: #333;
   height: 100vh;
   padding-top: 5%;
 }
@@ -244,25 +224,28 @@ span {
 .card {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  width: 350px;
-  height: 550px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #333;
-  border-radius: 10px;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+  margin: 20px auto;
+  padding: 20px 10%;
   gap: 10px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .pr-description {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
   gap: 10px;
 }
 
 .card-img {
-  height: 200px;
-  width: 310px;
+  width: 50%;
   border-radius: 10px;
 }
 
@@ -280,22 +263,29 @@ span {
   transition: .6s ease-in-out;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: space-evenly
+}
 
+/* Footer Style */
 
 
 
 .bot {
-  background-color: black;
-  color: #fff;
   height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #005582;
+  color: #fff;
 }
+
 
 .footer {
   display: flex;
+  width: 100%;
   justify-content: space-evenly;
   padding: 30px 20px;
 }
@@ -306,7 +296,12 @@ span {
 
 .semi-title {
   font-size: 1.5em;
-  margin: 1em 0;
+  margin: .3em 0;
+  color: #333;
+}
+
+.footer-text p {
+  margin-top: .5em;
 }
 
 .icons {
@@ -315,10 +310,12 @@ span {
 
 .icon-container {
   display: flex;
+  margin-top: 1em;
   gap: 2em;
 }
 
-.footnote {
-  text-align: center;
-  width: 80%;
+.icon-container .fa-brands {
+  color: #333;
+  font-size: 3em;
 }
+

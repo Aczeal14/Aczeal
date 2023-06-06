@@ -9,25 +9,23 @@ export default function Contact() {
           Feel free to Contact me by clicking the links below and I will get back to you as soon as possible
         </p>
       </div>
+      
+      
       <div className='footer'>
         <div className='footer-text'>
           <h3 className='semi-title'>Joshua Modar</h3>
-          <p>A Full Stack Developer building both Frontend and Backend of Websites and Web Application that leads to the success of the overall product.</p>
+          <hr />
+          <p>&copy; 2023, Created by: Aczeal</p>
         </div>
         <div className="icons">
           <h3 className='semi-title'>SOCIAL</h3>
+          <hr />  
           <div className='icon-container'>
             <a href="mailto: gaczeal@gmail.com"><i className="fa-brands fa-square-google-plus"></i></a>
             <a href="https://www.facebook.com/profile.php?id=100075714011468&mibextid=ZbWKwL" target="_blank"><i className="fa-brands fa-facebook"></i></a>
             <a href="https://github.com/Aczeal14" target="_blank"><i className="fa-brands fa-github"></i></a>
           </div>
-          
         </div>
-      </div>
-      
-      <div className='footnote'>
-        <hr />
-        <p>&copy; 2023, Made by: Aczeal</p>
       </div>
       
     </footer>

@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from '/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import Contact from './components/Contact'

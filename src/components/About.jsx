@@ -13,12 +13,15 @@ export default function About() {
         </div>
         <div className='about-container'>
           <div className='about-left'>
-            <h3 className='demi-title'>Get to know me!</h3>
+            <h3 className='demi-title'>Hi, I'm Joshua | Get to know me!</h3>
             <br />
-            <div>
-              I'm a reliable <b>Full-Stack Developer</b>, 
-              I'm passionate about building things for the web. I started my journey a few years ago. I found a video
-              on programming, and once that happened, I was completely hooked to the world of computers.
+            <div className='des'>
+              <b>Dream | Passion | Will</b> 
+            <br />
+            <br />
+
+              I started my dev journey a few years ago, where I started getting into tech and its wonders,
+              coincidantaly found a video on programming, and since then, I was completely hooked to the world of computers.
 
             <br />
             <br />
@@ -33,7 +36,6 @@ export default function About() {
               the one you will find in this portfolio. I'm now looking for Job opportunities where I can contribute, learn and grow. 
               to finally kick start my career and learn among professionals.
             </div>
-            <a href="#contact"><button className='btn2'>CONTACT</button></a>
           </div>
           <div className='about-right'>
             <h3 className='demi-title'>My Skills</h3>
@@ -42,7 +44,7 @@ export default function About() {
               <button className='skill'>CSS</button>
               <button className='skill'>BootStrap</button>
               <button className='skill'>JavaScript</button>
-              <button className='skill'>React</button>
+              <button className='skill'>React JS</button>
               <button className='skill'>Python</button>
             </div>
           </div>
