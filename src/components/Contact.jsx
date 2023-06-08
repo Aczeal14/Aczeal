@@ -1,4 +1,5 @@
 import React from 'react'
+import contact from '../assets/contact.png'
 
 export default function Contact() {
   return (
@@ -13,11 +14,18 @@ export default function Contact() {
       
       <div className='footer'>
         <div className='footer-text'>
-          <h3 className='semi-title'>Joshua Modar</h3>
-          <hr />
-          <p>&copy; 2023, Created by: Aczeal</p>
+          <img src={contact} alt="contact" />
         </div>
         <div className="icons">
+          <h3 className='semi-title'>Mailing Address:</h3>
+          <hr />
+          <p>Las Navas Northern Samar, Philippines</p>
+          <h3 className='semi-title'>Phone Number:</h3>
+          <hr />
+          <p>09663571356</p>
+          <h3 className='semi-title'>Email Address:</h3>
+          <hr />
+          <p>gaczeal@gmail.com</p>
           <h3 className='semi-title'>SOCIAL</h3>
           <hr />  
           <div className='icon-container'>
@@ -25,6 +33,9 @@ export default function Contact() {
             <a href="https://www.facebook.com/profile.php?id=100075714011468&mibextid=ZbWKwL" target="_blank"><i className="fa-brands fa-facebook"></i></a>
             <a href="https://github.com/Aczeal14" target="_blank"><i className="fa-brands fa-github"></i></a>
           </div>
+          <h3 className='semi-title'>Joshua Modar</h3>
+          <hr />
+          <p>&copy; 2023, Created by: Aczeal</p>
         </div>
       </div>
       

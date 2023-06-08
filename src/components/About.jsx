@@ -1,4 +1,5 @@
 import React from 'react'
+import profile from '../assets/profile.png'
 
 export default function About() {
   return (
@@ -7,19 +8,17 @@ export default function About() {
         <div className='sub-container'>
           <h2 className='sub-title'>About Me</h2>
           <p className='text-expo'>
-            Here you will find more information about me, what I do, and my
-            current skills mostly in terms of programming and technology
+            Here you will find more information about me and what I do.
           </p>
         </div>
         <div className='about-container'>
           <div className='about-left'>
-            <h3 className='demi-title'>Hi, I'm Joshua | Get to know me!</h3>
+            <img src={profile} alt="profile" className='profile' />
+          </div>
+          <div className='about-right'>
+            <h3 className='demi-title'>| Get to know me!</h3>
             <br />
             <div className='des'>
-              <b>Dream | Passion | Will</b> 
-            <br />
-            <br />
-
               I started my dev journey a few years ago, where I started getting into tech and its wonders,
               coincidantaly found a video on programming, and since then, I was completely hooked to the world of computers.
 
@@ -37,15 +36,25 @@ export default function About() {
               to finally kick start my career and learn among professionals.
             </div>
           </div>
-          <div className='about-right'>
-            <h3 className='demi-title'>My Skills</h3>
+          
+        </div>
+        <div className='skill-container'>
+          <div className='sub-container'>
+            <h2 className='sub-title'>My Skills</h2>
+            <p className='text-expo'>
+              Here you will find information about my
+              current skills mostly in terms of programming and technology
+            </p>
+          </div>
+          <div className='about-container'>
             <div className='skill-list'>
-              <button className='skill'>HTML</button>
-              <button className='skill'>CSS</button>
-              <button className='skill'>BootStrap</button>
-              <button className='skill'>JavaScript</button>
-              <button className='skill'>React JS</button>
-              <button className='skill'>Python</button>
+              <p className='skill'><span2>01</span2> HTML</p>
+              <p className='skill'><span2>02</span2> CSS</p>
+              <p className='skill'><span2>03</span2> BootStrap</p>
+              <p className='skill'><span2>04</span2> JavaScript</p>
+              <p className='skill'><span2>05</span2> React JS</p>
+              <p className='skill'><span2>06</span2> Python</p>
+              <p className='skill'><span2>07</span2> MongoDB</p>
             </div>
           </div>
         </div>

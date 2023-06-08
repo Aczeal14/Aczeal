@@ -1,4 +1,5 @@
 import React from 'react'
+import card from '../assets/Card.jpeg'
 
 export default function Project() {
   return (
@@ -7,12 +8,12 @@ export default function Project() {
         <div className='sub-container'>
           <h2 className='sub-title'>PROJECTS</h2>
           <p className='text-expo'>
-            Here you will find some of the personal and clients projects that I created with each project containing its own case study
+            Here you will find some of the personal projects that I created.
           </p>
         </div>
         <div className='works'>
           <div className='card'>
-            <img src="/src/assets/Card.jpeg" alt="Image" className='card-img'/>
+            <img src={card} alt="Image" className='card-img'/>
             <div className='pr-description'>
               <h2>Speed Typing Test App</h2>
               
@@ -26,8 +27,8 @@ export default function Project() {
               </div>
               <p><strong>About the project:</strong> This application fetches a set of new random words from an API, upon entering the site, and displays it in the browser. You will find this Speed Typing Test acuurate and helpful to increase your typing speed.</p>
               <div className='btn-container'> 
-                <button className='skill2'><a href='https://aczeal14.github.io/React-Typing-Test/'></a>Link</button>
-                <button className='skill2'><a href="https://github.com/Aczeal14/React-Typing-Test"></a> Code</button>
+                <a className='go-btn' href='https://aczeal14.github.io/React-Typing-Test/' target='blank'>Link</a>
+                <a className='go-btn' href="https://github.com/Aczeal14/React-Typing-Test" target='blank'>Code</a> 
               </div>
             </div>
           </div>
