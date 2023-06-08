@@ -25,7 +25,7 @@ export default function Project() {
                 <button className='skill2'>JavaScript</button>
                 <button className='skill2'>React</button>
               </div>
-              <p><strong>About the project:</strong> This application fetches a set of new random words from an API, upon entering the site, and displays it in the browser. You will find this Speed Typing Test acuurate and helpful to increase your typing speed.</p>
+              <p><strong>About the project:</strong><br /> This application fetches a set of new random words from an API, upon entering the site, and displays it in the browser. You will find this Speed Typing Test acuurate and helpful to increase your typing speed.</p>
               <div className='btn-container'> 
                 <a className='go-btn' href='https://aczeal14.github.io/React-Typing-Test/' target='blank'>Link</a>
                 <a className='go-btn' href="https://github.com/Aczeal14/React-Typing-Test" target='blank'>Code</a> 
